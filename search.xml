@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[java初始化顺序]]></title>
+    <url>%2FQinglry-S.github-io%2F2018%2F11%2F30%2Fjava%E5%88%9D%E5%A7%8B%E5%8C%96%E9%A1%BA%E5%BA%8F%2F</url>
+    <content type="text"><![CDATA[JAVA的初始化顺序： 父类的静态成员初始化&gt;父类的静态代码块&gt;子类的静态成员初始化&gt;子类的静态代码块&gt;父类的代码块&gt;父类的构造方法&gt;子类的代码块&gt;子类的构造方法 注意： 1.静态成员和静态代码块只有在类加载的时候执行一次，再次创建实例时，不再执行，因为只在方法区存在一份，属于一整个类。 2.上述的是通用的加载顺序，如果没有则省略。]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Static关键词解析]]></title>
+    <url>%2FQinglry-S.github-io%2F2018%2F11%2F26%2FStatic%E5%85%B3%E9%94%AE%E8%AF%8D%E8%A7%A3%E6%9E%90%2F</url>
+    <content type="text"><![CDATA[static 关键字的用途 在《Java编程思想》P86页有这样一段话： “static方法就是没有this的方法。在static方法内部不能调用非静态方法，反过来是可以的。而且可以在没有创建任何对象的前提下，仅仅通过类本身来调用static方法。这实际上正是static方法的主要用途。” 1）static方法 static方法一般称作静态方法，由于静态方法不依赖于任何对象就可以进行访问，因此对于静态方法来说，是没有this的，因为它不依附于任何对象，既然都没有对象，就谈不上this了。并且由于这个特性，在静态方法中不能访问类的非静态成员变量和非静态成员方法，因为非静态成员方法/变量都是必须依赖具体的对象才能够被调用。 但是要注意的是，虽然在静态方法中不能访问非静态成员方法和非静态成员变量，但是在非静态成员方法中是可以访问静态成员方法/变量的。 2）static变量 static变量也称作静态变量，静态变量和非静态变量的区别是：静态变量被所有的对象所共享，在内存中只有一个副本，它当且仅当在类初次加载时会被初始化。而非静态变量是对象所拥有的，在创建对象的时候被初始化，存在多个副本，各个对象拥有的副本互不影响。 static成员变量的初始化顺序按照定义的顺序进行初始化。 3）static代码块 static关键字还有一个比较关键的作用就是 用来形成静态代码块以优化程序性能。static块可以置于类中的任何地方，类中可以有多个static块。在类初次被加载的时候，会按照static块的顺序来执行每个static块，并且只会执行一次。 为什么说static块可以用来优化程序性能，是因为它的特性:只会在类加载的时候执行一次。 ​ static是不允许用来修饰局部变量。不要问为什么，这是Java语法的规定。 文章转载别处，仅供自己查阅http://www.cnblogs.com/dolphin0520/p/3799052.html]]></content>
+      <tags>
+        <tag>Java面试基础</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[第一篇文章]]></title>
     <url>%2FQinglry-S.github-io%2F2018%2F11%2F23%2F%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%2F</url>
     <content type="text"><![CDATA[写一个标题​ 想些啥你就写点啥吧，废话;度娘 没有引用任何地方 public void SayHello(){ }]]></content>

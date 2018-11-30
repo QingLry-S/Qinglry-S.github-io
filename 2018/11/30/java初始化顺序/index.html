@@ -79,13 +79,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="爱德华纽盖特的博客">
-<meta property="og:url" content="https://qinglry-s.github.io/Qinglry-S.github-io/archives/2018/11/index.html">
+<meta name="description" content="JAVA的初始化顺序： 父类的静态成员初始化&amp;gt;父类的静态代码块&amp;gt;子类的静态成员初始化&amp;gt;子类的静态代码块&amp;gt;父类的代码块&amp;gt;父类的构造方法&amp;gt;子类的代码块&amp;gt;子类的构造方法 注意： 1.静态成员和静态代码块只有在类加载的时候执行一次，再次创建实例时，不再执行，因为只在方法区存在一份，属于一整个类。 2.上述的是通用的加载顺序，如果没有则省略。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="java初始化顺序">
+<meta property="og:url" content="https://qinglry-s.github.io/Qinglry-S.github-io/2018/11/30/java初始化顺序/index.html">
 <meta property="og:site_name" content="爱德华纽盖特的博客">
+<meta property="og:description" content="JAVA的初始化顺序： 父类的静态成员初始化&amp;gt;父类的静态代码块&amp;gt;子类的静态成员初始化&amp;gt;子类的静态代码块&amp;gt;父类的代码块&amp;gt;父类的构造方法&amp;gt;子类的代码块&amp;gt;子类的构造方法 注意： 1.静态成员和静态代码块只有在类加载的时候执行一次，再次创建实例时，不再执行，因为只在方法区存在一份，属于一整个类。 2.上述的是通用的加载顺序，如果没有则省略。">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-11-30T05:53:26.835Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="爱德华纽盖特的博客">
+<meta name="twitter:title" content="java初始化顺序">
+<meta name="twitter:description" content="JAVA的初始化顺序： 父类的静态成员初始化&amp;gt;父类的静态代码块&amp;gt;子类的静态成员初始化&amp;gt;子类的静态代码块&amp;gt;父类的代码块&amp;gt;父类的构造方法&amp;gt;子类的代码块&amp;gt;子类的构造方法 注意： 1.静态成员和静态代码块只有在类加载的时候执行一次，再次创建实例时，不再执行，因为只在方法区存在一份，属于一整个类。 2.上述的是通用的加载顺序，如果没有则省略。">
 
 
 
@@ -115,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="https://qinglry-s.github.io/Qinglry-S.github-io/archives/2018/11/">
+  <link rel="canonical" href="https://qinglry-s.github.io/Qinglry-S.github-io/2018/11/30/java初始化顺序/">
 
 
 
 
 
-  <title>Archive | 爱德华纽盖特的博客</title>
+  <title>java初始化顺序 | 爱德华纽盖特的博客</title>
   
 
 
@@ -140,7 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -306,177 +310,149 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://qinglry-s.github.io/Qinglry-S.github-io/Qinglry-S.github-io/2018/11/30/java初始化顺序/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="爱德华">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/Qinglry-S.github-io/images/header.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="爱德华纽盖特的博客">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">java初始化顺序</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-30T13:52:47+08:00">
+                2018-11-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        Um..! 4 posts in total. Keep on posting.
-      </span>
 
-      
-
-        
-        
-        
-
-        
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
-          </div>
-        
-        
+            
+          
 
-        
+          
+          
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
+		  
+		<span class="post-meta-divider">|</span>
+		<span id="busuanzi_value_page_pv"></span>次阅读
+			
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/Qinglry-S.github-io/2018/11/30/java初始化顺序/" itemprop="url">
-              
-                <span itemprop="name">java初始化顺序</span>
-              
-            </a>
-        
-      </h2>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-30T13:52:47+08:00" content="2018-11-30">
-          11-30
-        </time>
-      </div>
+          
 
-    </header>
-  </article>
+        </div>
+      </header>
+    
 
-
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/Qinglry-S.github-io/2018/11/26/Static关键词解析/" itemprop="url">
-              
-                <span itemprop="name">Static关键词解析</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-26T14:20:31+08:00" content="2018-11-26">
-          11-26
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/Qinglry-S.github-io/2018/11/23/第一篇文章/" itemprop="url">
-              
-                <span itemprop="name">第一篇文章</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-23T11:05:48+08:00" content="2018-11-23">
-          11-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <p>JAVA的初始化顺序：</p>
+<p>父类的静态成员初始化&gt;父类的静态代码块&gt;子类的静态成员初始化&gt;子类的静态代码块&gt;父类的代码块&gt;父类的构造方法&gt;子类的代码块&gt;子类的构造方法</p>
+<p>注意：</p>
+<p>1.静态成员和静态代码块只有在类加载的时候执行一次，再次创建实例时，不再执行，因为只在方法区存在一份，属于一整个类。</p>
+<p>2.上述的是通用的加载顺序，如果没有则省略。</p>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/Qinglry-S.github-io/2018/11/23/hello-world/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-23T09:24:00+08:00" content="2018-11-23">
-          11-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/Qinglry-S.github-io/2018/11/26/Static关键词解析/" rel="next" title="Static关键词解析">
+                <i class="fa fa-chevron-left"></i> Static关键词解析
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -484,6 +460,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -720,6 +700,10 @@
 
 
   
+  <script type="text/javascript" src="/Qinglry-S.github-io/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/Qinglry-S.github-io/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 

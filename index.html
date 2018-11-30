@@ -321,6 +321,262 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://qinglry-s.github.io/Qinglry-S.github-io/Qinglry-S.github-io/2018/11/30/java初始化顺序/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="爱德华">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/Qinglry-S.github-io/images/header.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="爱德华纽盖特的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/Qinglry-S.github-io/2018/11/30/java初始化顺序/" itemprop="url">java初始化顺序</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-30T13:52:47+08:00">
+                2018-11-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+		  
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>JAVA的初始化顺序：</p>
+<p>父类的静态成员初始化&gt;父类的静态代码块&gt;子类的静态成员初始化&gt;子类的静态代码块&gt;父类的代码块&gt;父类的构造方法&gt;子类的代码块&gt;子类的构造方法</p>
+<p>注意：</p>
+<p>1.静态成员和静态代码块只有在类加载的时候执行一次，再次创建实例时，不再执行，因为只在方法区存在一份，属于一整个类。</p>
+<p>2.上述的是通用的加载顺序，如果没有则省略。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://qinglry-s.github.io/Qinglry-S.github-io/Qinglry-S.github-io/2018/11/26/Static关键词解析/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="爱德华">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/Qinglry-S.github-io/images/header.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="爱德华纽盖特的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/Qinglry-S.github-io/2018/11/26/Static关键词解析/" itemprop="url">Static关键词解析</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-26T14:20:31+08:00">
+                2018-11-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+		  
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="static-关键字的用途"><a href="#static-关键字的用途" class="headerlink" title="static 关键字的用途"></a>static 关键字的用途</h4><p>　在《Java编程思想》P86页有这样一段话：</p>
+<p>　　“static方法就是没有this的方法。在static方法内部不能调用非静态方法，反过来是可以的。而且可以在没有创建任何对象的前提下，仅仅通过类本身来调用static方法。这实际上正是static方法的主要用途。”</p>
+<h5 id="1）static方法"><a href="#1）static方法" class="headerlink" title="1）static方法"></a>1）static方法</h5><p>　　static方法一般称作静态方法，由于静态方法不依赖于任何对象就可以进行访问，因此对于静态方法来说，是没有this的，因为它不依附于任何对象，既然都没有对象，就谈不上this了。并且由于这个特性，在静态方法中不能访问类的非静态成员变量和非静态成员方法，因为非静态成员方法/变量都是必须依赖具体的对象才能够被调用。</p>
+<p>　　但是要注意的是，虽然在静态方法中不能访问非静态成员方法和非静态成员变量，但是在非静态成员方法中是可以访问静态成员方法/变量的。</p>
+<h5 id="2）static变量"><a href="#2）static变量" class="headerlink" title="2）static变量"></a>2）static变量</h5><p>　　static变量也称作静态变量，静态变量和非静态变量的区别是：静态变量被所有的对象所共享，在内存中只有一个副本，它当且仅当在类初次加载时会被初始化。而非静态变量是对象所拥有的，在创建对象的时候被初始化，存在多个副本，各个对象拥有的副本互不影响。</p>
+<p>　　static成员变量的初始化顺序按照定义的顺序进行初始化。</p>
+<h5 id="3）static代码块"><a href="#3）static代码块" class="headerlink" title="3）static代码块"></a>3）static代码块</h5><p>　　static关键字还有一个比较关键的作用就是 用来形成静态代码块以优化程序性能。static块可以置于类中的任何地方，类中可以有多个static块。在类初次被加载的时候，会按照static块的顺序来执行每个static块，并且只会执行一次。</p>
+<p>　　为什么说static块可以用来优化程序性能，是因为它的特性:只会在类加载的时候执行一次。</p>
+<p>​    static是不允许用来修饰局部变量。不要问为什么，这是Java语法的规定。</p>
+<hr>
+<p>文章转载别处，仅供自己查阅<a href="http://www.cnblogs.com/dolphin0520/p/3799052.html" target="_blank" rel="noopener">http://www.cnblogs.com/dolphin0520/p/3799052.html</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://qinglry-s.github.io/Qinglry-S.github-io/Qinglry-S.github-io/2018/11/23/第一篇文章/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -630,7 +886,7 @@
               
                 <a href="/Qinglry-S.github-io/archives">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -652,7 +908,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">tags</span>
                 
               </div>
